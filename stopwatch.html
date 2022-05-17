@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop Watch</title>
+    <link rel="stylesheet" href="stopwatch.css">
+</head>
+<body>
+    <div class="heading">
+        <h1>Stop Watch ⌚ </h1>
+    </div>
+ <div class="container">
+
+     <img class="watch_image" src="https://thumbs.dreamstime.com/b/black-white-stopwatch-icon-watch-black-white-stopwatch-icon-watch-clock-sport-99903952.jpg" alt="watch image">
+    <div class="innerContainer">
+        <h1 id="minutes"> 00 </h1><span> <h1> :</h1> </span>
+        <h1 id="seconds"> 00 </h1> <span> <h1> :</h1></span>
+        <h1 id="milliseconds"> 00 </h1>
+    </div>
+ </div>
+<div class="button_btn">
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <button onclick="reset()">Reset</button>
+</div>
+</body>
+<script src="stopwatch.js"></script>
+</html>
