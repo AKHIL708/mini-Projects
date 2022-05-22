@@ -31,13 +31,20 @@
 }
 .containerChild{
     font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
-#value{
-    margin: 25px;
+.containerchild2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
 }
-#tipValue{
-    margin-right: 20px;
-}
+
 .button_btn{
     background-color: rgb(75, 75, 227);
     cursor:pointer;
@@ -64,4 +71,11 @@
     align-items: center;
     margin-top: 10px;
     font-size: 30px;
+}
+
+#file{
+    margin-top: 15px;
+}
+#ProgressDemo{
+    margin: 10px;
 }

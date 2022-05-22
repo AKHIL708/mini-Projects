@@ -13,15 +13,20 @@
         <div class="containerChild">
     <label for="#">Enter Bill Amount: </label>
     <input type="text" id="value"><br>
-    <label for="##">Enter Tip percentage : </label>
-    <input type="text" id="tipValue"></div>
-   
+    <progress id="file" value="10" max="100"></progress>
+    <div class="containerchild2">
+        <button onclick="ProgressAdd()">Add Tip</button>
+        <h5 id="ProgressDemo">0%</h5>
+        <button onclick="ProgressMinus()">Remove Tip</button>
+    </div>
+</div>
 </div>
 <h3 id="tip"></h3>
 <div class="buttons">
 <button class="button_btn" onclick="submit()">Calculate</button>
 
 </div>
+
 </body>
 <script src="TipCalculator.js"></script>
 </html>

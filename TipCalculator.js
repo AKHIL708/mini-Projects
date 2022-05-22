@@ -1,28 +1,22 @@
 let sum = 0;
 function submit(){  
  let value = document.getElementById("value").value;
- let tipValue = document.getElementById("tipValue").value;
-
+ let file = document.getElementById("file").value
 if(isNaN(value)){
   alert("please! Enter a valid Amount")
 }else{
-   let calc = value * tipValue / 100;
-   document.getElementById("tip").innerHTML = `Your Tip is : ₹ ${calc}`
-}
-if(isNaN(tipValue)){
-  alert("please! Enter a valid Tip")
-}else{
-   let calc = value * tipValue / 100;
-   document.getElementById("tip").innerHTML = `Your Tip is : ₹ ${calc}`
+   let calc = value * file / 100;
+   document.getElementById("tip").innerHTML = `Tip Value is : ₹ ${calc}`
+  
 }
 
 
  
  setTimeout(() => {
      
-      async function refresh(){
-         let value = document.getElementById("value").value = await ""
-         let tipValue = document.getElementById("tipValue").value = await "";
+       function refresh(){
+   document.getElementById("value").value =  ""
+   document.getElementById("tipValue").value =  "";
      
       }
       refresh()
@@ -30,6 +24,16 @@ if(isNaN(tipValue)){
   
 }
 
-function Refresh(){
-   location.reload()
+
+let progressing = 0;
+function ProgressAdd(){
+ let file =  document.getElementById("file").value = progressing +=5
+ console.log(file)
+ document.getElementById("ProgressDemo").innerHTML = file + "%"
+ 
+}
+function ProgressMinus(){
+ let file =  document.getElementById("file").value = progressing -=5
+
+ document.getElementById("ProgressDemo").innerHTML = file + "%"
 }
